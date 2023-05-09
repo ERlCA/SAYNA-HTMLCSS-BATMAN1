@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Space+Grotesk:wght@400;700&display=swap');
+
+/*
+    font-family: 'Rajdhani', sans-serif;
+
+    font-family: 'Space Grotesk', sans-serif;
+*/
+
+:root {
+  --yellow-logo: #ffff00;
+  --yellow-txt: #f8f184;
+  --blue-bck: #19587d;
+  --red-color: #b11313;
+  --gray-color: #c4c4c4;
+  --border-color: #ffffff10;
+  --hover-filter: brightness(0) saturate(100%) invert(85%) sepia(87%) saturate(6614%) hue-rotate(360deg) brightness(107%) contrast(105%);
+}
+
+*,
+a,
+::before,
+::after,
+span,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  color: #fff;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background: #000 url("../illustrations/Bathome1.png") no-repeat scroll center top;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+.body-container {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+/* --- Setting all typo ---*/
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: normal;
+}
+
+button {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/*---- Container ----*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*---- Yellow over button ----*/
+.yellow-button:hover {
+  filter: var(--hover-filter);
+}
+
+/*----- Border left and right ----*/
+header,
+.bat-intro,
+.bat-cinema,
+.nemesis,
+.alies,
+.justice-league,
+.multimedia {
+  border-left: 2px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+}
+
+header {
+  border-bottom: 4px solid var(--border-color);
+  height: 100px;
+  padding: 50px 50px 170px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav img {
+  width: 120px;
+  height: auto;
+}
+
+nav ul li a {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+}
+
+/*---- Navigation animation ----*/
+nav ul li a::before {
+  content: "";
+  width: 0;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -3px;
+  transition: width .5s ease-in-out;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+/*---- Section "bat-intro" ----*/
+.bat-intro {
+  height: 700px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+}
+
+.bat-intro div {
+  width: 70%;
+  text-align: center;
+}
+
+.bat-intro div p {
+  line-height: 1.6rem;
+  margin: 20% 0 5%;
+  padding: 0 20%;
+}
+
+.bat-intro h1 {
+  margin-bottom: 5%;
+}
+
+.bat-intro .button a {
+  background-image: linear-gradient(to right, #eddebf50 60%, #8900099d);
+  font-size: 22px;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  width: 250px;
+  margin: 0 20px;
+  padding: 30px 0;
+  display: inline-block;
+}
+
+.bat-intro .button a:hover {
+  background-image: linear-gradient(to right, #eddebfee 20%, #890009);
+}
+
+.bat-intro aside {
+  height: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: -54px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bat-intro aside .social-media-aside a {
+  display: block;
+}
+
+.bat-intro aside .social-media-aside a:nth-child(even) {
+  margin: 30px 0;
+}
+
+.bat-intro .img-bot {
+  position: absolute;
+  bottom: 0;
+}
+
+/*---- Setting width of images illustration -----*/
+.bat-cinema,
+.nemesis,
+.alies,
+.justice-league {
+  padding: 70px 50px 50px;
+}
+
+/*---- Display "flex" of Actor's pic ----*/
+.photo-acteur {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+:is(.bat-cinema, .nemesis, .alies, .justice-league, .multimedia) h1 {
+  margin-bottom: 35px;
+}
+
+:is(.bat-cinema, .nemesis, .alies, .justice-league) p {
+  text-align: justify;
+  width: 90%;
+  line-height: 25px;
+  font-weight: normal;
+  margin-bottom: 4rem;
+}
+
+.photo-container p {
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+}
+
+.nemesis-title {
+  position: relative;
+}
+
+.nemesis-title img {
+  width: 150px;
+  position: absolute;
+  left: 100px;
+  top: -80px;
+}
+
+.alies {
+  position: relative;
+}
+
+img[alt="Batman Badass"] {
+  position: absolute;
+  right: -110px;
+  top: -190px;
+}
+
+.sliding-container {
+  margin: 5px 0 20px;
+  position: relative;
+  left: -120px;
+}
+
+/*---- Section "multimedia" ----*/
+.multimedia {
+  padding: 0 5rem 40px;
+}
+
+.multimedia-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+}
+
+.details-container {
+  margin: 20px 0 10rem;
+  padding-right: 20px;
+  width: 60%;
+  border: 1px solid #fff;
+  background-color: var(--blue-bck);
+}
+
+.details-container .synopsis {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.details-container img {
+  float: left;
+  margin-right: 20px;
+}
+
+img[title="left-arrow"] {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.multimedia-section div+img {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.multimedia-section img+img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.multimedia-section img+img:hover {
+  box-shadow: 0 0 50px 20px #ffffff88;
+}
+
+.contact {
+  background-color: #fff;
+}
