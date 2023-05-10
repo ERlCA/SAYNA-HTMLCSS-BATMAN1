@@ -23,9 +23,9 @@
           </ul>
         </nav>
       </header>
-      <main class="container">
+      <main >
         <!-- Batman introduction -->
-        <section class="bat-intro">
+        <section class="bat-intro container">
           <div>
             <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre
               éternelle contre les
@@ -60,7 +60,7 @@
           </aside>
         </section>
         <!-- Batman at the cinema -->
-        <section class="bat-cinema">
+        <section class="bat-cinema container">
           <div class="acteurs">
             <h1>BATMAN AU CINÉMA</h1>
             <p>
@@ -97,7 +97,7 @@
           </div>
         </section>
         <!-- Nemesis -->
-        <section class="nemesis">
+        <section class="nemesis container">
           <div class="nemesis-title">
             <img src="./assets/illustrations/Bathome13.png" alt="arme de
             Batman" />
@@ -134,7 +134,7 @@
           </div>
         </section>
 
-        <section class="alies">
+        <section class="alies container">
           <img src="./assets/illustrations/Bathome12.png" alt="Batman Badass"
             title="Batman"/>
           <h1>ALLIES</h1>
@@ -170,7 +170,7 @@
             </div>
           </div>
         </section>
-        <section class="justice-league">
+        <section class="justice-league container">
           <h1>JUSTICE LEAGUE</h1>
           <p>
             Lorsque la Terre est menacée les plus grands super-héros
@@ -188,7 +188,7 @@
           <img src="./assets/illustrations/Bathome11.png" alt="L'equipe de
             Justice League" title="Justice league" />
         </div>
-        <section class="multimedia">
+        <section class="multimedia container">
           <h1>MULTIMÉDIA</h1>
           <div class="multimedia-section">
             <img src="./assets/logos/icon_flèche_1.png" alt="icon fleche gauche" title="left-arrow"/>
@@ -217,58 +217,64 @@
         </section>
         <!-- CONTACT -->
         <div class="contact">
-          <h2>PRENONS CONTACT</h2>
-          <form class="contact-form">
-            <label for="email">ADRESSE EMAIL</label>
-            <input type="email" name="email" placeholder="Adresse email" />
-            <label for="newsletter">NEWSLETTER</label>
-            <label for="">En cochant cette case vous acceptez de recevoir
-              l'actualité concernant les aventures de
-              Batman :</label>
-            <input type="checkbox" name="newletter" />
-            <div>
-              <span>Choisissez la fréquence à laquelle vous souhaitez
-                recevoir votre newsletter</span>
-              <img src="./assets/logos/icon_flèche_2.png" alt="flèche logo"
-                />
-            </div>
-            <div>
-              <p>Souhaitez-vous recevoir des news</p>
-              <button type="menu">Des films</button>
-              <button type="menu">Des comics</button>
-              <button type="menu">De tout</button>
-            </div>
-            <label for="message">MESSAGE</label>
-            <textarea name="message" placeholder="Laissez un
-              commentaire pour la communauté" cols="30"></textarea>
-            <button type="submit">CONFIRMER</button>
-          </form>
+          <div class="contact-container">
+            <h2>PRENONS CONTACT</h2>
+            <form class="contact-form">
+              <label class="lb-block" class="label" for="email">ADRESSE EMAIL</label><br>
+              <input type="email" name="email" placeholder="Adresse email" /><br>
+              <label class="lb-block" for="newsletter">NEWSLETTER</label>
+              <label for="">En cochant cette case vous acceptez de recevoir
+                l'actualité concernant les aventures de
+                Batman :</label>
+              <input type="checkbox" name="newletter" />
+              <div class="dropmenu">
+                <input type="text" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter" disabled/>
+                <img src="./assets/logos/icon_flèche_1.png"/>
+              </div>
+              <div>
+                <input type="text" placeholder="Souhaitez-vous recevoir des news" disabled />
+                <div class="btn-group">
+                  <button type="menu">Des films</button>
+                  <button type="menu">Des comics</button>
+                  <button type="menu">De tout</button>
+                </div>
+              </div>
+              <label for="message" class="lb-block">MESSAGE</label>
+              <input name="message" placeholder="Laissez un commentaire pour la communauté" />
+              <button type="submit">CONFIRMER</button>
+            </form>
+          </div>
         </div>
         <!-- Citation -->
-        <section class="quote">
-          <img src="./assets/logos/icon_guillemets_1.png" alt="guillemets" />
-          <blockquote>La seule façon raisonnable de vivre en ce bas monde,
-            c'est en dehors des règles.</blockquote>
-          <p><cite>The Dark Knight : Le Chevalier Noir</cite> - </br>Le Joker
-          à Batman (2008)</p>
-          <img src="./assets/logos/icon_guillemets_2.png" alt="guillemets" />
+        <section class="quote-container container">
+          <img src="./assets/logos/icon_guillemets_1.png" alt="guillemets 1" />
+          <div class="quote">
+            <blockquote>La seule façon raisonnable de vivre en ce bas monde,
+              c'est en dehors des règles.</blockquote>
+            <p>
+              <cite>The Dark Knight : Le Chevalier Noir</cite> - </br>Le Joker
+            à Batman (2008)
+            </p>
+          </div>
+          <img src="./assets/logos/icon_guillemets_2.png" alt="guillemets 2" />
         </section>  
       </main>
       <footer class="container">
-        <div><a href="https://www.warnerbros.com" target="_blank">
+        <div>
+          <a href="https://www.warnerbros.com" target="_blank">
             <img src="./assets/logos/icon_WB.png" alt="Warner Bros logo"
               title="Warner Bros" />
           </a>
-          <span>Ce projet respecte l'univers cinématographique des films Batman
+          <p>Ce projet respecte l'univers cinématographique des films Batman
             récents. Version Nolan &
-            Snyder & Reeves</span>
+            Snyder & Reeves</p>
         </div>
         <div class="links">
           <a href="https://www.sayna.io/"><img src="./assets/logos/logo_sayna_white.png" alt="logo sayna" title="Sayna" /></a>
           <img src="./assets/logos/icon_x.png" alt="x logo" />
           <a href="https://www.dc.com/" target="_blank"><img src="./assets/logos/icon_DC.png" alt="DC logo" title="DC" /></a>
-          <div class="social-media">
-            <a href="facebook.com" target="_blank"
+          <!-- <div class="social-media"> -->
+            <a href="facebook.com" target="_blank">
               <img src="./assets/logos/icon_facebook.png" alt="facebook logo" title="facebook logo" />
             </a>
             <a href="instagram.com" target="_blank">
@@ -277,7 +283,7 @@
             <a href="twitter.com" target="_blank">
               <img src="./assets/logos/icon_tw.png" alt="twitter logo" title="twitter logo" />
             </a>
-          </div>
+          <!-- </div> -->
         </div>
       </footer>
     </div>
